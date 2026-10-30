@@ -20,7 +20,7 @@ import httpx
 from . import __version__
 
 DEFAULT_UA = (
-    f"RojgaarScout/{__version__} (+https://github.com/rojgaar-scout/Rojgaar-Scout-Agent; personal job search)"
+    f"RojgaarScout/{__version__} (+https://github.com/ksudhanshu/Rojgaar-Scout-Agent; personal job search)"
 )
 RETRY_STATUS = {429, 500, 502, 503, 504}
 

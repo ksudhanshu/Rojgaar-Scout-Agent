@@ -168,7 +168,7 @@ There is deliberately no tool for fetching URLs, running shell commands, sending
 **From source (recommended while in 0.x):**
 
 ```bash
-git clone https://github.com/<your-org>/Rojgaar-Scout-Agent.git
+git clone https://github.com/ksudhanshu/Rojgaar-Scout-Agent.git
 cd Rojgaar-Scout-Agent
 make install                     # uv venv + editable install with dev extras
 source .venv/bin/activate
