@@ -1,0 +1,66 @@
+# ~/RojgaarScout/profile/preferences.yaml
+# Your saved job-search preferences. Rojgaar-Scout reads this file on every run.
+#
+# Rule for all hard filters: FAIL-OPEN. If a posting doesn't state a field
+# (salary, visa, location), it is kept, not dropped.
+
+schema_version: 1
+
+# ---------------------------------------------------------------------------
+# MARKET — where to search (US only)
+# ---------------------------------------------------------------------------
+markets:
+  us:
+    enabled: true
+    locations:                          # city names, metro areas, or remote scopes
+      - "San Francisco, CA"             # default
+      - "Bay Area, CA"                  # default: expanded via the metro alias table
+      - remote-US
+    work_authorization: citizen         # citizen | green_card | needs_sponsorship | opt_cpt
+    drop_if_no_sponsorship: false       # true only if you need sponsorship
+    salary_floor: {amount: 150000, currency: USD, period: year}
+    cv_locale: us
+    sources:                            # implemented in v0.1
+      - greenhouse
+      - lever
+      - ashby
+      - remotive
+      - remoteok
+      - hn_whos_hiring
+      # planned: workable, himalayas, weworkremotely, themuse, usajobs
+    company_registry: config/companies.us.yaml
+
+include_remote_global: true             # also keep "remote, anywhere" jobs
+
+# ---------------------------------------------------------------------------
+# JOB FILTERS
+# ---------------------------------------------------------------------------
+filters:
+  remote_modes: [remote, hybrid, onsite]
+  employment_types: [full_time]
+  seniority: [senior, staff]            # ±1 level is allowed; empty = any
+  max_age_days: 30
+  exclude_companies: []
+  exclude_keywords: [unpaid, "commission only"]
+  exclude_title_words: [intern]
+  require_keywords: []
+  hide_high_risk: false
+
+# ---------------------------------------------------------------------------
+# RANKING — soft preferences (scoring only, never dropping)
+# ---------------------------------------------------------------------------
+ranking:
+  target_titles: [Backend Engineer, Platform Engineer, Senior Software Engineer]
+  core_skills: {Python: 3, Go: 3, PostgreSQL: 2, Kubernetes: 2}
+  preferred_domains: [fintech, devtools]
+  preferred_companies: []
+  weights: {title: 2, must_have: 3, seniority: 2, logistics: 2, preference: 1}
+
+# ---------------------------------------------------------------------------
+# DAILY REPORT
+# ---------------------------------------------------------------------------
+report:
+  top_n: 15
+  drafts_per_day: 5
+  new_only: true
+  shortlist_size: 40

@@ -1,0 +1,39 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+        python: ["3.11", "3.12", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Install
+        run: |
+          uv venv .venv
+          uv pip install --python .venv/bin/python -e ".[dev]"
+      - name: Lint
+        run: |
+          .venv/bin/python -m ruff check src tests
+      - name: Unit tests (JUnit XML)
+        run: |
+          mkdir -p reports
+          .venv/bin/python -m pytest tests/unit --junitxml=reports/junit-unit.xml
+      - name: Integration tests (JUnit XML)
+        run: |
+          .venv/bin/python -m pytest tests/integration -m integration --junitxml=reports/junit-integration.xml
+      - name: Upload test reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: junit-${{ matrix.os }}-${{ matrix.python }}
+          path: reports/

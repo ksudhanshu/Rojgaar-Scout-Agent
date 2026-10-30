@@ -1,0 +1,10 @@
+# ~/RojgaarScout/profile/pii.yaml — NEVER sent to a model.
+# Prompts and drafts use placeholders ({{NAME}}, {{EMAIL}} ...); the renderer
+# fills them in locally at the last step.
+NAME: "Your Name"
+EMAIL: "you@example.com"
+PHONE: "+1 555 0100"
+LOCATION: "San Francisco, CA"
+LINKEDIN: ""
+GITHUB: ""
+WEBSITE: ""

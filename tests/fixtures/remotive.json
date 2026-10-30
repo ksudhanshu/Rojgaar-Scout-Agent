@@ -1,0 +1,41 @@
+{
+  "job-count": 3,
+  "jobs": [
+    {
+      "id": 2001,
+      "url": "https://remotive.com/remote-jobs/software-dev/senior-python-engineer-2001",
+      "title": "Senior Python Engineer",
+      "company_name": "Delta Health",
+      "category": "Software Development",
+      "job_type": "full_time",
+      "publication_date": "2026-10-27T08:00:00",
+      "candidate_required_location": "USA",
+      "salary": "$150k - $185k",
+      "description": "<p>Python, PostgreSQL, AWS. Help us modernize healthcare billing.</p>"
+    },
+    {
+      "id": 2002,
+      "url": "https://remotive.com/remote-jobs/software-dev/staff-platform-engineer-2002",
+      "title": "Staff Platform Engineer",
+      "company_name": "Acme Fintech",
+      "category": "Software Development",
+      "job_type": "full_time",
+      "publication_date": "2026-10-27T09:00:00",
+      "candidate_required_location": "USA",
+      "salary": "",
+      "description": "<p>Own our Kubernetes platform and developer tooling. Go, Kubernetes, Terraform.</p>"
+    },
+    {
+      "id": 2003,
+      "url": "https://remotive.com/remote-jobs/software-dev/backend-developer-2003",
+      "title": "Backend Developer",
+      "company_name": "Epsilon GmbH",
+      "category": "Software Development",
+      "job_type": "full_time",
+      "publication_date": "2026-10-27T09:00:00",
+      "candidate_required_location": "Europe",
+      "salary": "",
+      "description": "<p>Java and Spring.</p>"
+    }
+  ]
+}

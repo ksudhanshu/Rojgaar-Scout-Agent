@@ -1,0 +1,16 @@
+{
+  "name": "rojgaar-scout",
+  "version": "0.1.0",
+  "description": "Local-first job scout: ranks today's shortlist and drafts truthful, tailored CVs. Never submits.",
+  "author": { "name": "Rojgaar-Scout contributors" },
+  "license": "MIT",
+  "keywords": ["jobs", "resume", "career", "mcp"],
+  "skills": "./src/rojgaar/data/skills/",
+  "agents": "./plugin/agents/",
+  "mcpServers": {
+    "rojgaar": {
+      "command": "uvx",
+      "args": ["--from", "rojgaar-scout[mcp]", "rojgaar", "mcp"]
+    }
+  }
+}

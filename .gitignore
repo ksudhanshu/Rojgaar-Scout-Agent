@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+dist/
+build/
+*.egg-info/
+
+# Test reports
+reports/
+
+# Never commit personal data
+RojgaarScout/
+.rojgaar/
+*.db
+*.db-journal
+.env
+pii.yaml
+bank.yaml
+!examples/bank.example.yaml

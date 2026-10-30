@@ -1,0 +1,17 @@
+[
+  {"last_updated": 1793200000, "legal": "API Terms of Service: Please link back to Remote OK and mention it as a source."},
+  {
+    "id": "330001",
+    "slug": "remote-senior-go-engineer-zeta-330001",
+    "epoch": 1793145600,
+    "date": "2026-10-27T08:00:00+00:00",
+    "company": "Zeta Labs",
+    "position": "Senior Go Engineer",
+    "tags": ["golang", "postgres"],
+    "description": "<p>Go microservices. Contact our recruiter on WhatsApp to schedule.</p>",
+    "location": "Worldwide",
+    "salary_min": 140000,
+    "salary_max": 170000,
+    "url": "https://remoteOK.com/remote-jobs/330001"
+  }
+]

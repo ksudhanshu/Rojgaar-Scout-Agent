@@ -1,0 +1,24 @@
+[
+  {
+    "id": "b1c2d3e4-0001",
+    "text": "Backend Engineer",
+    "hostedUrl": "https://jobs.lever.co/beta/b1c2d3e4-0001",
+    "applyUrl": "https://jobs.lever.co/beta/b1c2d3e4-0001/apply",
+    "createdAt": 1793145600000,
+    "workplaceType": "hybrid",
+    "categories": {"location": "Oakland, CA", "commitment": "Full-time", "team": "Engineering", "allLocations": ["Oakland, CA"]},
+    "descriptionPlain": "Beta Cloud builds developer infrastructure. You will work on Python services and Kubernetes.",
+    "lists": [{"text": "Requirements", "content": "<li>3+ years Python</li><li>Kubernetes</li>"}],
+    "additionalPlain": "We sponsor visas.",
+    "salaryRange": {"min": 160000, "max": 200000, "currency": "USD", "interval": "per-year-salary"}
+  },
+  {
+    "id": "b1c2d3e4-0002",
+    "text": "Senior Data Engineer",
+    "hostedUrl": "https://jobs.lever.co/beta/b1c2d3e4-0002",
+    "createdAt": 1793145600000,
+    "workplaceType": "on-site",
+    "categories": {"location": "London, UK", "commitment": "Full-time"},
+    "descriptionPlain": "Spark and Airflow pipelines."
+  }
+]

@@ -1,0 +1,44 @@
+# ~/RojgaarScout/profile/bank.yaml — the single source of truth about you.
+# Tailoring may only SELECT, REORDER and REPHRASE these claims, never invent.
+# Every CV bullet must cite claim IDs. Set verified_by_user: true only for
+# claims you have checked yourself.
+schema_version: 1
+roles:
+  - id: exp.acme
+    org: Acme Fintech Inc
+    title: Senior Backend Engineer
+    start: "2022-04"
+    end: null
+    location: San Francisco, CA
+    claims:
+      - id: exp.acme.b1
+        text: Co-led migration of the payments ledger from MySQL to PostgreSQL
+        metrics: [{value: 40, unit: "% p99 latency reduction"}]
+        skills: [PostgreSQL, MySQL, Go]
+        qualifiers: [co-led, team of 4]
+        verified_by_user: true
+      - id: exp.acme.b2
+        text: Built a Python service that reconciles 2 million transactions a day
+        metrics: [{value: 2, unit: "million transactions/day"}]
+        skills: [Python, Kafka]
+        qualifiers: []
+        verified_by_user: true
+  - id: exp.beta
+    org: Beta Cloud
+    title: Software Engineer
+    start: "2018-06"
+    end: "2022-03"
+    location: Oakland, CA
+    claims:
+      - id: exp.beta.b1
+        text: Helped move 30 services onto Kubernetes
+        metrics: [{value: 30, unit: services}]
+        skills: [Kubernetes, Docker]
+        qualifiers: [helped]
+        verified_by_user: true
+education:
+  - id: edu.bs
+    degree: B.S. Computer Science
+    school: State University
+    end: "2018"
+skills: [Python, Go, PostgreSQL, MySQL, Kafka, Kubernetes, Docker]

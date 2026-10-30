@@ -1,0 +1,55 @@
+# Metro alias table: few postings say "Bay Area" literally, so a wanted metro
+# expands to the city names postings actually use. Matching is case-insensitive
+# and on whole words.
+"San Francisco, CA":
+  - San Francisco
+  - SF
+  - S.F.
+  - South San Francisco
+"Bay Area, CA":
+  - Bay Area
+  - SF Bay Area
+  - San Francisco Bay Area
+  - Silicon Valley
+  - San Francisco
+  - South San Francisco
+  - Oakland
+  - Berkeley
+  - Emeryville
+  - Alameda
+  - San Jose
+  - Santa Clara
+  - Sunnyvale
+  - Mountain View
+  - Palo Alto
+  - Menlo Park
+  - Redwood City
+  - Redwood Shores
+  - San Mateo
+  - Foster City
+  - Burlingame
+  - San Bruno
+  - Brisbane
+  - Cupertino
+  - Los Gatos
+  - Milpitas
+  - Fremont
+  - Newark
+  - Hayward
+  - San Leandro
+  - Pleasanton
+  - Dublin
+  - San Ramon
+  - Walnut Creek
+  - Concord
+  - Livermore
+  - Los Altos
+  - Campbell
+  - Saratoga
+  - Belmont
+  - San Carlos
+  - Daly City
+  - Novato
+  - San Rafael
+  - Sausalito
+  - Mill Valley

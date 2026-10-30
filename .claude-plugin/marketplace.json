@@ -1,0 +1,11 @@
+{
+  "name": "rojgaar-scout",
+  "owner": { "name": "Rojgaar-Scout contributors" },
+  "plugins": [
+    {
+      "name": "rojgaar-scout",
+      "source": "./",
+      "description": "Local-first job scout for Claude Code. Never submits applications."
+    }
+  ]
+}

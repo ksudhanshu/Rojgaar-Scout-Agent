@@ -1,0 +1,45 @@
+{
+  "apiVersion": "1",
+  "jobs": [
+    {
+      "id": "gm-100",
+      "title": "Senior Software Engineer, Platform",
+      "location": "Remote",
+      "secondaryLocations": [{"location": "San Francisco, CA"}],
+      "isRemote": true,
+      "workplaceType": "Remote",
+      "employmentType": "FullTime",
+      "jobUrl": "https://jobs.ashbyhq.com/gamma/gm-100",
+      "publishedAt": "2026-10-27T16:00:00.000+00:00",
+      "isListed": true,
+      "descriptionHtml": "<p>Build our platform in Go and Python. Postgres, Kubernetes.</p>",
+      "compensation": {
+        "compensationTierSummary": "$170K – $210K",
+        "summaryComponents": [
+          {"compensationType": "Salary", "interval": "1 YEAR", "currencyCode": "USD", "minValue": 170000, "maxValue": 210000}
+        ]
+      }
+    },
+    {
+      "id": "gm-200",
+      "title": "Product Designer",
+      "location": "New York, NY",
+      "isRemote": false,
+      "workplaceType": "OnSite",
+      "employmentType": "FullTime",
+      "jobUrl": "https://jobs.ashbyhq.com/gamma/gm-200",
+      "publishedAt": "2026-10-27T16:00:00.000+00:00",
+      "isListed": true,
+      "descriptionPlain": "Design delightful products."
+    },
+    {
+      "id": "gm-300",
+      "title": "Unlisted Role",
+      "location": "San Francisco, CA",
+      "jobUrl": "https://jobs.ashbyhq.com/gamma/gm-300",
+      "publishedAt": "2026-10-27T16:00:00.000+00:00",
+      "isListed": false,
+      "descriptionPlain": "Hidden."
+    }
+  ]
+}

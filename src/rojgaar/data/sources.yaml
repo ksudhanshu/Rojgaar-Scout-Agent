@@ -1,0 +1,13 @@
+# Every source with its tier and terms. Tiers:
+#   safe_default — official or documented public endpoint; on out of the box
+#   opt_in       — undocumented, keyed, paid or legally grey; user must enable
+#   avoid        — terms forbid automated access; no adapter ships
+sources:
+  greenhouse:     {tier: safe_default, kind: ats,  tos_url: "https://developers.greenhouse.io/job-board.html", notes: "Public GET endpoints, no auth"}
+  lever:          {tier: safe_default, kind: ats,  tos_url: "https://github.com/lever/postings-api", notes: "Published jobs may be scraped"}
+  ashby:          {tier: safe_default, kind: ats,  tos_url: "https://developers.ashbyhq.com/docs/public-job-posting-api"}
+  remotive:       {tier: safe_default, kind: feed, tos_url: "https://github.com/remotive-com/remote-jobs-api", max_fetches_per_day: 4, notes: "24h delay; keep attribution"}
+  remoteok:       {tier: safe_default, kind: feed, tos_url: "https://remoteok.com/api", max_fetches_per_day: 4, notes: "Link back to Remote OK required"}
+  hn_whos_hiring: {tier: safe_default, kind: feed, tos_url: "https://hn.algolia.com/api", max_fetches_per_day: 2}
+  linkedin:       {tier: avoid, notes: "User Agreement forbids automated access"}
+  glassdoor:      {tier: avoid, notes: "Terms forbid scraping"}

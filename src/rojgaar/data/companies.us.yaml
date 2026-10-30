@@ -1,0 +1,17 @@
+# Company registry: which employer uses which ATS, and under what board slug.
+# No ATS publishes its customer list, so this file is curated by you.
+#
+# These seed entries are UNVERIFIED examples. Run `rojgaar companies check`
+# to confirm each board answers, then set `verified: true`. Add companies with
+# `rojgaar companies detect <careers-page-url>`.
+companies:
+  - {name: Stripe,     ats: greenhouse, slug: stripe,     hq: "San Francisco, CA", verified: false}
+  - {name: Airbnb,     ats: greenhouse, slug: airbnb,     hq: "San Francisco, CA", verified: false}
+  - {name: Databricks, ats: greenhouse, slug: databricks, hq: "San Francisco, CA", verified: false}
+  - {name: Figma,      ats: greenhouse, slug: figma,      hq: "San Francisco, CA", verified: false}
+  - {name: Discord,    ats: greenhouse, slug: discord,    hq: "San Francisco, CA", verified: false}
+  - {name: Anthropic,  ats: greenhouse, slug: anthropic,  hq: "San Francisco, CA", verified: false}
+  - {name: Plaid,      ats: lever,      slug: plaid,      hq: "San Francisco, CA", verified: false}
+  - {name: OpenAI,     ats: ashby,      slug: openai,     hq: "San Francisco, CA", verified: false}
+  - {name: Ramp,       ats: ashby,      slug: ramp,       hq: "New York, NY",      verified: false}
+  - {name: Linear,     ats: ashby,      slug: linear,     hq: "San Francisco, CA", verified: false}
